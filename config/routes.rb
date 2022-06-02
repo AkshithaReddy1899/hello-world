@@ -10,4 +10,6 @@ Rails.application.routes.draw do
       resources :greetings
     end
   end
+
+  root "greetings#index"
 end
