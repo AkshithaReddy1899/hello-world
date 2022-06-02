@@ -1,2 +1,4 @@
-json.id @greeting.id
-json.message @greeting.message
+{
+	json.id @greeting.id
+  json.message @greeting.message
+}
