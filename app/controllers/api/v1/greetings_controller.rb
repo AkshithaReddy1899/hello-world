@@ -1,10 +1,10 @@
 class Api::V1::GreetingsController < ApplicationController
-	before_action :set_greeting
-	def show
+
+	def index
+		@random = Greeting.all.sample(1).first
+		render json: @random.message
 	end
 
-	private
-	def set_greeting
-		@greeting = Greeting.find(params[:id])
+	def show
 	end
 end
